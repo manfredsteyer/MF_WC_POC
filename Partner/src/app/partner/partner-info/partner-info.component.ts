@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventBusService } from 'event-bus';
 
 @Component({
   selector: 'app-partner-info',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartnerInfoComponent implements OnInit {
 
-  constructor() { }
+  message: string;
+
+  constructor(private eventBus: EventBusService) { 
+
+    eventBus.events.subscribe((msg: string) => {
+      this.message = msg;
+    });
+
+  }
 
   ngOnInit(): void {
+
   }
 
 }

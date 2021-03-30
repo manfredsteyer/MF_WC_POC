@@ -1,0 +1,17 @@
+[
+    {
+        "remoteEntry": "http://localhost:3000/remoteEntry.js",
+        "remoteName": "Partner",
+        "routes": [
+            {
+                "path": "partner",
+                "exposedModule": "./PartnerModule",
+                "angularModule": "PartnerModule"
+            }
+        ],
+        "links": [
+          "partner/anlegen",
+          "partner/info"
+        ]
+    }
+]

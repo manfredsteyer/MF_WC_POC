@@ -1,4 +1,5 @@
 import { Component, NgZone } from '@angular/core';
+import { EventBusService } from 'event-bus';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,14 @@ import { Component, NgZone } from '@angular/core';
 export class AppComponent {
   title = 'shell';
 
-  constructor(private ngZone: NgZone) {
-    (window as any).ngZone = ngZone;
+  constructor(
+    private eventBus: EventBusService,
+    private ngZone: NgZone) {
+
+      eventBus.events.next('Hello from the Shell');
+
+      (window as any).eventBus = eventBus;
+
+      (window as any).ngZone = ngZone;
   }
 }

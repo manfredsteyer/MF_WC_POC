@@ -27,6 +27,7 @@ module.exports = {
         },        
         
         shared: {
+          "event-bus": { singleton: true },
           "@angular/core": {  }, 
           "@angular/common": {  }, 
           "@angular/router": {  },

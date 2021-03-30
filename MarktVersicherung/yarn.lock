@@ -3620,6 +3620,13 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+event-bus@^0.0.1:
+  version "0.0.1"
+  resolved "http://localhost:4873/event-bus/-/event-bus-0.0.1.tgz#f76784136b64d0ffb2eee2ce390de3f9428fefb6"
+  integrity sha512-lwMIrWO1vVbJr1ViHu0lLD+kv3uzlipvxODPh1C1fRrww2d6549EkhrL385Y4/mB5NtDrDFl6Y9jqfAKQlEL6w==
+  dependencies:
+    tslib "^2.0.0"
+
 eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
