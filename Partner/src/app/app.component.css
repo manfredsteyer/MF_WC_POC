@@ -1,0 +1,5 @@
+
+.menu-item, .menu-item:active, .menu-item:visited {
+    color:white;
+    font-weight: bold;
+}
