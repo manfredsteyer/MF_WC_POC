@@ -13,5 +13,9 @@
           "partner/anlegen",
           "partner/info"
         ]
+    },
+    {
+        "remoteEntry": "http://localhost:4000/remoteEntry.js",
+        "remoteName": "MarktVersicherung"
     }
 ]
